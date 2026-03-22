@@ -17,4 +17,4 @@ document.addEventListener('DOMContentLoaded', () => {
     refs_menu.menu.classList.toggle('is-open');
   }
 
-})();
+});
