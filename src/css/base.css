@@ -1,10 +1,15 @@
+
 :root {
-  /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: 'Manrope', sans-serif;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
+  --font-family: "Manrope", sans-serif;
+  --black: #121417;
+  --green: #4dc274;
+  --light-green: #d4fde1;
+  --gray: #f3f5f6;
+  --white: #fff;
+  --font-weight-bold: 700;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --transition-time: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -14,6 +19,6 @@
 
 body {
   font-family: var(--font-family);
-  color: var(--color);
-  background-color: var(--background-color);
+  color: var(--black);
+  background-color: var(--white);
 }
