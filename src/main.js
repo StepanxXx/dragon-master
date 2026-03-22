@@ -1,4 +1,4 @@
-(() => {
+document.addEventListener('DOMContentLoaded', () => {
 
   const refs_menu = {
     // Додати атрибут data-menu-open на кнопку відкриття
