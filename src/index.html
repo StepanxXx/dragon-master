@@ -20,32 +20,54 @@
     />
     <link rel="stylesheet" href="./css/main.css" />
 
-    <!-- Mobile -->
+    <!-- Mobile 1x -->
     <link
       rel="preload"
       as="image"
       href="./images/hero-bg.jpg"
-      imagesrcset="./images/hero-bg.jpg 1x, ./images/hero-bg@2x.jpg 2x"
-      media="(max-width: 767.98px)"
+      media="(max-width: 767.98px) and ((max-resolution: 1.99dppx), (max-resolution: 191dpi))"
       fetchpriority="high"
     />
 
-    <!-- Tablet -->
+    <!-- Mobile 2x -->
+    <link
+      rel="preload"
+      as="image"
+      href="./images/hero-bg@2x.jpg"
+      media="(max-width: 767.98px) and ((min-resolution: 2dppx), (min-resolution: 192dpi))"
+      fetchpriority="high"
+    />
+
+    <!-- Tablet 1x -->
     <link
       rel="preload"
       as="image"
       href="./images/hero-bg-tablet.jpg"
-      imagesrcset="./images/hero-bg-tablet.jpg 1x, ./images/hero-bg-tablet@2x.jpg 2x"
-      media="(min-width: 768px) and (max-width: 1279.98px)"
+      media="(min-width: 768px) and (max-width: 1279.98px) and ((max-resolution: 1.99dppx), (max-resolution: 191dpi))"
     />
 
-    <!-- Desktop -->
+    <!-- Tablet 2x -->
+    <link
+      rel="preload"
+      as="image"
+      href="./images/hero-bg-tablet@2x.jpg"
+      media="(min-width: 768px) and (max-width: 1279.98px) and ((min-resolution: 2dppx), (min-resolution: 192dpi))"
+    />
+
+    <!-- Desktop 1x -->
     <link
       rel="preload"
       as="image"
       href="./images/hero-bg-desktop.jpg"
-      imagesrcset="./images/hero-bg-desktop.jpg 1x, ./images/hero-bg-desktop@2x.jpg 2x"
-      media="(min-width: 1280px)"
+      media="(min-width: 1280px) and ((max-resolution: 1.99dppx), (max-resolution: 191dpi))"
+    />
+
+    <!-- Desktop 2x -->
+    <link
+      rel="preload"
+      as="image"
+      href="./images/hero-bg-desktop@2x.jpg"
+      media="(min-width: 1280px) and ((min-resolution: 2dppx), (min-resolution: 192dpi))"
     />
   </head>
 
