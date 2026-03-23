@@ -17,4 +17,26 @@ document.addEventListener('DOMContentLoaded', () => {
     refs_menu.menu.classList.toggle('is-open');
   }
 
+  // === Встановлення активного класу для посилань меню залежно від URL ===
+  function updateActiveNavLink() {
+    const navLinks = document.querySelectorAll('.main-nav-link');
+    // Отримуємо поточний хеш
+    let currentHash = window.location.hash;
+    if (currentHash === '') return;
+      
+    // Перебираємо всі посилання і оновлюємо клас
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === currentHash) {
+        link.classList.add('active');
+      }
+    });
+  }
+
+  // Викликаємо функцію одразу при завантаженні
+  updateActiveNavLink();
+
+  // Відстежуємо подальші зміни URL (при кліках по пунктах меню)
+  window.addEventListener('hashchange', updateActiveNavLink);
+
 });

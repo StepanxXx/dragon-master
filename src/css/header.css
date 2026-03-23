@@ -153,6 +153,21 @@
 
 
 
+/* Відміна "залипання" hover на сенсорних пристроях */
+@media not (hover: hover) {
+    .main-nav-link:hover:not(.active)::after {
+        transform: translateX(-100%);
+    }
+
+    .social-list-link:hover {
+        border-color: rgba(18, 20, 23, 0.1);
+    }
+
+    .social-list-link:hover .social-list-icon {
+        fill: var(--black);
+    }
+}
+
 /* #endregion */
 
 /* #region Mobile */
