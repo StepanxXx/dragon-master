@@ -8,7 +8,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 425px 20px 20px;
+    padding: 425px 20px 66px;
 }
 
 @media (resolution: 2x) {
@@ -71,7 +71,7 @@
     display: block;
     border: none;
     border-radius: 12px;
-    padding: 14px 0;
+    padding: 14px;
     width: 100%;
     background-color: var(--green);
     font-weight: 700;
@@ -83,7 +83,7 @@
 
 @media (min-width: 768px) {
     .hero-btn {
-        padding: 16px 0;
+        padding: 16px;
         width: 306px;
         height: 60px;
         font-size: 18px;
