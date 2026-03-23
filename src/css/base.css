@@ -22,3 +22,7 @@ body {
   color: var(--black);
   background-color: var(--white);
 }
+
+body:has(.mobile-menu.is-open) {
+  overflow: hidden;
+}
