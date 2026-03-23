@@ -148,3 +148,16 @@
 .hero-arrow-btn:active>.hero-arrow-icon {
     fill: var(--white);
 }
+
+/* Відміна "залипання" hover на сенсорних пристроях */
+@media not (hover: hover) {
+    .hero-btn:hover {
+        background-color: var(--green);
+    }
+    .hero-arrow-btn:hover {
+        background-color: var(--white);
+    }
+    .hero-arrow-btn:hover > .hero-arrow-icon {
+        fill: var(--green);
+    }
+}
