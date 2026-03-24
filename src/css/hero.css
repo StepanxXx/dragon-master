@@ -1,3 +1,17 @@
+.hero {
+    margin-bottom: 80px;
+}
+@media (min-width: 768px) {
+    .hero {
+        margin-bottom: 100px;
+    }
+}
+min-width: 1280px) {
+    .hero {
+        margin-bottom: 96px;
+    }
+}
+
 .hero-container {
     position: relative;
     border-radius: 16px;
