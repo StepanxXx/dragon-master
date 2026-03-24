@@ -2,15 +2,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const refs_menu = {
     // Додати атрибут data-menu-open на кнопку відкриття
-    openModalBtn: document.querySelector('[data-menu-open]'),
+    openModalBtns: document.querySelectorAll('[data-menu-open]'),
     // Додати атрибут data-menu-close на кнопку закриття
-    closeModalBtn: document.querySelector('[data-menu-close]'),
+    closeModalBtns: document.querySelectorAll('[data-menu-close]'),
     // Додати атрибут data-menu на бекдроп модалки
     menu: document.querySelector('[data-menu]'),
   };
 
-  refs_menu.openModalBtn?.addEventListener('click', toggleMenu);
-  refs_menu.closeModalBtn?.addEventListener('click', toggleMenu);
+  refs_menu.openModalBtns.forEach(btn => btn.addEventListener('click', toggleMenu));
+  refs_menu.closeModalBtns.forEach(btn => btn.addEventListener('click', toggleMenu));
 
   function toggleMenu() {
     // is-open це клас який буде додаватися/забиратися на бекдроп при натисканні на кнопки
