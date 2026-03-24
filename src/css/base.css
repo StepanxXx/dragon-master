@@ -3,9 +3,12 @@
   --font-family: "Manrope", sans-serif;
   --black: #121417;
   --green: #4dc274;
+  --green-accent: #38ae5f;
   --light-green: #d4fde1;
+  --light-green-accent: #bee8cc;
   --gray: #f3f5f6;
   --white: #fff;
+  --linear-gradient-green: linear-gradient(80deg, #4dc274 0%, #bee8cc 100%);
   --font-weight-bold: 700;
   --font-weight-regular: 400;
   --font-weight-semibold: 600;
