@@ -1,0 +1,52 @@
+.application__left {
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.application__image-wrapper img {
+  width: 100%;
+  display: block;
+}
+
+.application__card {
+  background-color: #4caf6d;
+  padding: 32px;
+  text-align: center;
+  color: white;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
+.application__input,
+.application__textarea {
+  width: 100%;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  border-radius: 12px;
+  background-color: transparent;
+  outline: transparent;
+}
+
+.application__input {
+  height: 56px;
+  padding: 16px 18px;
+}
+
+.application__textarea {
+  min-height: 104px;
+  padding: 16px 18px;
+  resize: none;
+}
+
+.application__radio-title {
+  font-weight: var(--font-weight-semibold);
+}
