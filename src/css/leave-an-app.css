@@ -35,25 +35,30 @@
 
 .application__wrapper {
   display: flex;
+  justify-content: center;
   gap: 32px;
   align-items: flex-start;
 }
 
-.application__left,
-.application__right {
-  width: calc((100% - 32px) / 2);
-}
-
 .application__left {
-  position: relative;
+  width: 492px;
+  height: 578px;
   border-radius: 30px;
   overflow: hidden;
   background-color: var(--green);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.application__right {
+  width: 500px;
 }
 
 .application__image-mask {
   width: 100%;
-  aspect-ratio: 492 / 392;
+  height: 418px;
+  flex-shrink: 0;
   overflow: hidden;
 }
 
@@ -62,25 +67,33 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  clip-path: ellipse(100% 80% at 50% 0%);
+  object-position: center top;
+  /* This is the magic: elliptical border-radius clips bottom into a concave arch */
+  border-radius: 50% 50% 50% 50% / 0% 0% 35% 35%;
 }
 
 .application__card {
-  background-color: var(--green);
-  padding: 24px 20px 28px;
+  height: 126px;                /* ← як у Figma */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  /* ← тепер працює правильно */
+  align-items: center;
+  padding: 10px 20px 20px;      /* ↑ тут регулюєш позицію */
   text-align: center;
   color: var(--white);
 }
 
 .application__number {
-  margin-bottom: 16px;
+  margin: 0 0 12px;
   font-size: 40px;
   line-height: 1.2;
-  font-weight: var(--font-weight-bold);
+  font-weight: 700;
 }
 
 .application__card-text {
-  margin: 0;
+  margin: 0 auto;
+  width: 430px;
   font-size: 16px;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.7);
