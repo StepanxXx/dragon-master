@@ -23,7 +23,7 @@
   border-radius: 8px;
   background: linear-gradient(
     to top,
-    var(--light-green-accent) 42%,
+    var(--light-green-accent) 40%,
     transparent 44%
   );
   -webkit-box-decoration-break: clone;
