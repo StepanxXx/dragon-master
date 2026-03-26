@@ -1,0 +1,228 @@
+/* Styles for Mobile devices */
+.footer {
+  background-color: #121417;
+  color: #ffffff;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+
+.footer-logo {
+  color: #ffffff;
+}
+
+.container-logo-adress {
+  margin-bottom: 40px;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-paragraph {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 0.9;
+  margin-bottom: 4px;
+}
+
+.contact-links {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #fff;
+  text-decoration: none;
+}
+
+.container-nav {
+    margin-bottom: 40px;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-nav-link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  height: 18px;
+  padding: 0;
+  transition: background-color var(--transition-time);
+  
+}
+
+.footer-nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 37px;
+  height: 2px;
+  background-color: var(--green);
+  transform: translateX(-101%);
+  transition: transform var(--transition-time);
+}
+
+.footer-nav-link:hover::after,
+.footer-nav-link:focus::after,
+.footer-nav-link:active::after,
+.footer-nav-link.active::after {
+  transform: translateX(0);
+}
+
+.container-social-links {
+  margin-bottom: 40px;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-social-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 8px;
+  width: 42px;
+  height: 42px;
+
+  color: #ffffff; 
+  transition: border-color var(--transition-time);
+}
+
+.footer-social-list-icon {
+  fill: currentColor; 
+}
+
+.footer-social-item a:hover,
+.footer-social-item a:focus,
+.footer-social-item a:active {
+  border-color: #4dc274;
+  color: #4dc274;
+}
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+}
+
+.container-footer-terms {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.copyright, 
+.footer-terms-item a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 0.9;
+}
+
+.footer-terms-list {
+  display: flex;
+  gap: 18px;
+}
+
+/* Styles for Tablet devices */
+@media screen and (min-width: 768px) {
+.footer {
+  padding-top: 32px;
+  padding-bottom: 16px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+  margin-bottom: 32px;
+}
+
+.container-logo-adress {
+  margin-bottom: 125px;
+}
+
+
+.container-social-links {
+  margin-left: 131px;
+}
+
+.footer-divider {
+  width: 100%;  
+  margin-bottom: 20px;
+}
+
+.container-footer-terms {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+}
+
+
+/* Відміна "залипання" hover на сенсорних пристроях */
+@media not (hover: hover) {
+    .footer-nav-link:hover:not(.active)::after {
+        transform: translateX(-101%); 
+    }
+    .footer-social-item a:hover,
+    .footer-social-item a:active {
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+  }
+}
+
+/* Styles for Desktop devices */
+@media screen and (min-width: 1280px) {
+.footer {
+  padding-top: 64px;
+  padding-bottom: 23px;
+}
+
+.footer-container {
+    justify-content: space-between;
+}
+
+.container-nav {
+    margin-top: 36px;
+  }
+
+.container-logo-adress {
+  margin-bottom: 79px;
+}
+
+
+.container-social-links {
+  margin-bottom: 40px;
+  margin-top: 36px;
+}
+
+.footer-divider {
+  margin-bottom: 23px;
+}
+}
