@@ -3,7 +3,6 @@
 .footer-nav-list, 
 .footer-social-list, 
 .footer-terms-list {
-  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -17,25 +16,13 @@
 }
 
 
-.logo {
-  display: inline-block;
-  font-weight: 700;
-  font-size: 20px;
-  color: #ffffff;
+.footer-logo {
   text-decoration: none;
-  margin-bottom: 20px;
-}
-
-.logo-accent {
-  color: #4dc274;
+  color: #ffffff;
 }
 
 .container-logo-adress {
   margin-bottom: 40px;
-}
-
-.contact-information {
-  font-style: normal;
 }
 
 .contact-list {
@@ -173,7 +160,7 @@
     flex-wrap: wrap;
 }
 
-.logo {
+.footer-logo {
   margin-bottom: 32px;
 }
 
