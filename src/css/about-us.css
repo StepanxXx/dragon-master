@@ -24,7 +24,7 @@
   content: '';
   position: absolute;
   left: 0;
-  bottom: 4px;
+  bottom: 0;
   width: 39px;
   height: 12px;
   border-radius: 8px;
@@ -50,7 +50,6 @@
     height: 16px;
     width: 52px;
     left: -2px;
-    bottom: 3px;
   }
 }
 
@@ -63,7 +62,6 @@
     height: 20px;
     width: 62px;
     left: -7px;
-    bottom: -3px;
   }
 }
 
