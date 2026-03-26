@@ -1,3 +1,7 @@
+.reviews {
+    margin-bottom: 80px;
+}
+
 .reviews-title {
     font-size: 32px;
     line-height: 113%;
@@ -37,7 +41,7 @@
     gap: 24px;
 }
 
-/* MOBILE: should be shown 1 card - IT IS HOW IT IS WORK NOW */
+/* MOBILE: should be shown 1 card*/
 .review-card {
     flex: 0 0 100%;
     background-color: var(--gray);
@@ -45,7 +49,6 @@
     box-sizing: border-box;
     display: none;
     padding: 16px;
-    margin-bottom: 80px;
 }
 
 .review-card:nth-child(1) {
@@ -53,11 +56,13 @@
 }
 
 
-/* TABLET: should be shown 2 cards - BUT STILL SHOWN IN THE SAME WAY AS MOBILE */
+/* TABLET: should be shown 2 cards*/
 @media only screen and (min-width: 768px) {
+    .reviews {
+            margin-bottom: 100px;
+    }
     .review-card {
         flex: 0 0 calc((100% - 32px) / 2);
-        margin-bottom: 100px;
     }
     .reviews-title {
         font-size: 40px;
@@ -69,11 +74,13 @@
     }
 }
 
-/* DESKTOP:should be shown 3 cards - BUT STILL SHOWN IN THE SAME WAY AS MOBILE */
+/* DESKTOP:should be shown 3 cards*/
 @media only screen and (min-width: 1280px) {
+    .reviews {
+            margin-bottom: 150px;
+    }
     .review-card {
         flex: 0 0 calc((100% - 64px) / 3);
-        margin-bottom: 150px;
     }
     .review-card:nth-child(3) {
         display: block;
