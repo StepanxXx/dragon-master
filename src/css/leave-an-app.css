@@ -2,6 +2,8 @@
   padding: 80px 0;
 }
 
+/* --- top of "Leave an app" --- */
+
 .application__header {
   max-width: 665px;
   margin: 0 auto 64px;
@@ -21,8 +23,8 @@
   border-radius: 8px;
   background: linear-gradient(
     to top,
-    var(--light-green) 52%,
-    transparent 52%
+    var(--light-green-accent) 42%,
+    transparent 44%
   );
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
@@ -32,6 +34,8 @@
   color: rgba(18, 20, 23, 0.5);
   line-height: 1.5;
 }
+
+/* --- set up of container for "Leave an app" --- */
 
 .application__wrapper {
   display: flex;
@@ -55,6 +59,8 @@
   width: 500px;
 }
 
+/* --- left side of "Leave an app" --- */
+
 .application__image-mask {
   width: 100%;
   height: 418px;
@@ -67,17 +73,16 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
-  /* This is the magic: elliptical border-radius clips bottom into a concave arch */
+  object-position: center 48%;    /* ↑ тут регулюєш позицію */
   border-radius: 50% 50% 50% 50% / 0% 0% 35% 35%;
 }
 
 .application__card {
-  height: 126px;                /* ← як у Figma */
+  height: 126px;                
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;  /* ← тепер працює правильно */
+  justify-content: flex-start;
   align-items: center;
   padding: 10px 20px 20px;      /* ↑ тут регулюєш позицію */
   text-align: center;
@@ -98,6 +103,8 @@
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.7);
 }
+
+/* --- right side of the "Leave an app" --- */
 
 .application__form {
   display: flex;
@@ -190,4 +197,42 @@
   color: rgba(18, 20, 23, 0.5);
   font-size: 12px;
   line-height: 1.33;
+}
+
+/* --- tablet set-up --- */
+
+@media (max-width: 1024px) {
+  .application__wrapper {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .application__left {
+    display: none;
+  }
+
+  .application__right {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+/* --- phone set-up--- */
+
+@media (max-width: 768px) {
+  .application__wrapper {
+    padding: 0 16px;
+    gap: 32px;
+  }
+
+  .application__right {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .application__button {
+    width: 100%;
+  }
 }
