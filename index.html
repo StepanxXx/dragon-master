@@ -70,7 +70,7 @@
       media="(min-width: 1280px) and (min-resolution: 192dpi)"
     />
     <script type="module" crossorigin src="/dragon-master/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/dragon-master/assets/index-kciofjpM.css">
+    <link rel="stylesheet" crossorigin href="/dragon-master/assets/index-kebMShUL.css">
   </head>
 
   <body>
@@ -459,9 +459,116 @@
   </div>
 </section>
       <section class="leave-an-app" id="leave-an-app">
-  <div class="container"></div>
-</section>
+  <div class="container">
+    <div class="application__header">
+      <h2 class="application__title">
+        Leave an <span class="application__accent">application</span>
+      </h2>
+      <p class="application__text">
+        Please use the form below to contact us. Enter your name, email, and message and we'll get back to you shortly.
+      </p>
+    </div>
 
+    <div class="application__wrapper">
+      <div class="application__left">
+        <div class="application__image-mask">
+          <img
+            class="application__image"
+          src="../images/girl-1x.jpg"
+          srcset="../images/girl-1x.jpg 1x"
+          alt="Girl learning online"
+          />
+        </div>
+
+        <div class="application__card">
+          <p class="application__number">1000</p>
+          <p class="application__card-text">
+            of our online English language lessons! This journey has been full of discovery, growth and unforgettable moments, and we are happy to share this joyful event with you.
+          </p>
+        </div>
+      </div>
+
+      <div class="application__right">
+        <form class="application__form" name="leave_an_application" autocomplete="off">
+          <label for="name" class="visually-hidden">Name</label>
+          <input
+            class="application__input"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            required
+            pattern="^[A-Za-zА-Яа-яІіЇїЄє' -]{2,50}$"
+            title="Enter a valid name"
+          />
+
+          <label for="email" class="visually-hidden">Email</label>
+          <input
+            class="application__input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+            pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+            title="Enter a valid email address"
+          />
+
+          <label for="phone" class="visually-hidden">Phone</label>
+          <input
+            class="application__input"
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Phone"
+            required
+            pattern="^\+?[0-9\s\-()]{10,15}$"
+            title="Enter a valid phone number"
+          />
+          <label for="comment" class="visually-hidden">Comment</label>
+          <textarea
+            class="application__textarea"
+            id="comment"
+            name="comment"
+            placeholder="Comment"
+            required
+          ></textarea>
+
+          <p class="application__radio-title">Choose a teacher</p>
+
+          <div class="application__radio-group">
+            <label class="application__radio-label">
+              <input type="radio" name="teacher" value="Maria" checked />
+              Maria
+            </label>
+
+            <label class="application__radio-label">
+              <input type="radio" name="teacher" value="Artem" />
+              Artem
+            </label>
+
+            <label class="application__radio-label">
+              <input type="radio" name="teacher" value="Ilona" />
+              Ilona
+            </label>
+
+            <label class="application__radio-label">
+              <input type="radio" name="teacher" value="Volodymyr" />
+              Volodymyr
+            </label>
+          </div>
+
+          <button class="application__button" type="submit">Send</button>
+        </form>
+
+        <p class="application__policy">
+          By clicking on “Send” button, you agree to our Privacy Policy,
+          and allow Promodo to use this information for marketing purposes.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
       <section class="reviews" id="reviews">
   <div class="container">
     <h2 class="reviews-title">
