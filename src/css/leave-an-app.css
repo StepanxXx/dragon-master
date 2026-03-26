@@ -1,0 +1,238 @@
+.leave-an-app {
+  padding: 80px 0;
+}
+
+/* --- top of "Leave an app" --- */
+
+.application__header {
+  max-width: 665px;
+  margin: 0 auto 64px;
+  text-align: center;
+}
+
+.application__title {
+  margin-bottom: 16px;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: var(--font-weight-bold);
+}
+
+.application__accent {
+  display: inline;
+  padding: 0 4px;
+  border-radius: 8px;
+  background: linear-gradient(
+    to top,
+    var(--light-green-accent) 40%,
+    transparent 44%
+  );
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.application__text {
+  color: rgba(18, 20, 23, 0.5);
+  line-height: 1.5;
+}
+
+/* --- set up of container for "Leave an app" --- */
+
+.application__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.application__left {
+  width: 492px;
+  height: 578px;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: var(--green);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.application__right {
+  width: 500px;
+}
+
+/* --- left side of "Leave an app" --- */
+
+.application__image-mask {
+  width: 100%;
+  height: 418px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.application__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 48%;    /* ↑ тут регулюєш позицію */
+  border-radius: 50% 50% 50% 50% / 0% 0% 35% 35%;
+}
+
+.application__card {
+  height: 126px;                
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px 20px;      /* ↑ тут регулюєш позицію */
+  text-align: center;
+  color: var(--white);
+}
+
+.application__number {
+  margin: 0 0 12px;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.application__card-text {
+  margin: 0 auto;
+  width: 430px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* --- right side of the "Leave an app" --- */
+
+.application__form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
+.application__input,
+.application__textarea {
+  width: 100%;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  border-radius: 12px;
+  background-color: transparent;
+  outline: transparent;
+  color: var(--black);
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.application__input {
+  height: 56px;
+  padding: 16px 18px;
+}
+
+.application__textarea {
+  min-height: 104px;
+  padding: 16px 18px;
+  resize: none;
+}
+
+.application__input::placeholder,
+.application__textarea::placeholder {
+  color: rgba(18, 20, 23, 0.5);
+}
+
+.application__radio-title {
+  margin-top: 14px;
+  margin-bottom: 14px;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: var(--font-weight-semibold);
+}
+
+.application__radio-group {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.application__radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.application__button {
+  min-height: 60px;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--green);
+  color: var(--white);
+  font-size: 18px;
+  line-height: 1.56;
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  transition: background-color var(--transition-time);
+}
+
+.application__button:hover,
+.application__button:focus {
+  background-color: var(--green-accent);
+}
+
+.application__policy {
+  margin-top: 16px;
+  color: rgba(18, 20, 23, 0.5);
+  font-size: 12px;
+  line-height: 1.33;
+}
+
+/* --- tablet set-up --- */
+
+@media (max-width: 1024px) {
+  .application__wrapper {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .application__left {
+    display: none;
+  }
+
+  .application__right {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+/* --- phone set-up--- */
+
+@media (max-width: 768px) {
+  .application__wrapper {
+    padding: 0 16px;
+    gap: 32px;
+  }
+
+  .application__right {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .application__button {
+    width: 100%;
+  }
+}
