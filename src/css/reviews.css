@@ -1,3 +1,7 @@
+.reviews {
+    margin-bottom: 80px;
+}
+
 .reviews-title {
     font-size: 32px;
     line-height: 113%;
@@ -14,22 +18,21 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: -4px;
+    top: 30px;
     z-index: -1;
-    background-color: #bee8cc;
-    width: 100%;
+    background-color: var(--light-green-accent);
+    width: 135px;
     border-radius: 8px;
-    height: 16px;
+    height: 12px;
 }
 
 .review-subtitle {
-    max-width: 650px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 171%;
     text-align: center;
-    color: rgba(18, 20, 23, 0.7);
-    margin: 0 auto 40px auto;
-    line-height: 1.5;
+    color: rgba(18, 20, 23, 0.5);
+    margin-bottom: 40px;
 }
 
 .reviews-list {
@@ -37,47 +40,18 @@
     gap: 24px;
 }
 
-/* MOBILE: should be shown 1 card - IT IS HOW IT IS WORK NOW */
+/* MOBILE: should be shown 1 card*/
 .review-card {
     flex: 0 0 100%;
     background-color: var(--gray);
     border-radius: 16px;
+    width: 335px;
     box-sizing: border-box;
     display: none;
-    padding: 16px;
-    margin-bottom: 80px;
 }
 
 .review-card:nth-child(1) {
     display: block;
-}
-
-
-/* TABLET: should be shown 2 cards - BUT STILL SHOWN IN THE SAME WAY AS MOBILE */
-@media only screen and (min-width: 768px) {
-    .review-card {
-        flex: 0 0 calc((100% - 32px) / 2);
-        margin-bottom: 100px;
-    }
-    .reviews-title {
-        font-size: 40px;
-        line-height: 120%;
-    }
-
-    .review-card:nth-child(2) {
-        display: block;
-    }
-}
-
-/* DESKTOP:should be shown 3 cards - BUT STILL SHOWN IN THE SAME WAY AS MOBILE */
-@media only screen and (min-width: 1280px) {
-    .review-card {
-        flex: 0 0 calc((100% - 64px) / 3);
-        margin-bottom: 150px;
-    }
-    .review-card:nth-child(3) {
-        display: block;
-    }
 }
 
 .review-header {
@@ -86,15 +60,14 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    margin: 32px 16px;
+    margin: 20px;
 }
 
 .review-card img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    margin: 14px 0 14px 16px;
-    ;
+    margin: 14px 0 14px 14px;
 }
 
 .review-name {
@@ -120,9 +93,90 @@
 
 .review-text {
     font-weight: 400;
-    line-height: 150%;
+    font-size: 14px;
+    line-height: 171%;
     color: rgba(18, 20, 23, 0.5);
-    font-size: 16px;
-    margin: 32px;
-    margin-bottom: 40px;
+    margin: 20px 34px 40px 34px;
+}
+
+/* TABLET: should be shown 2 cards*/
+@media only screen and (min-width: 768px) {
+    .reviews {
+        margin-bottom: 100px;
+    }
+
+    .reviews-list {
+        gap: 32px;
+    }
+    .review-card {
+        flex: 0 0 calc((100% - 32px) / 2);
+    }
+
+    .reviews-title {
+        font-size: 40px;
+        line-height: 120%;
+    }
+
+    .reviews-title span::after {
+        width: 167px;
+        height: 20px;
+        top: 35px;
+    }
+
+    .review-subtitle {
+        font-size: 18px;
+        line-height: 167%;
+        text-align: center;
+        color: rgba(18, 20, 23, 0.5);
+        margin: 0 28.5px 64px 28.5px;
+    }
+
+    .review-card:nth-child(2) {
+        display: block;
+    }
+
+    .review-header {
+        margin: 32px 16px;
+    }
+    
+    .review-card img {
+        margin: 14px 0 14px 16px;
+    }
+
+    .review-text {
+        font-size: 16px;
+        line-height: 150%;
+        margin: 32px 32px 40px 32px;
+    }
+}
+
+/* DESKTOP:should be shown 3 cards*/
+@media only screen and (min-width: 1280px) {
+    .reviews {
+        margin-bottom: 150px;
+    }
+
+    .reviews-title {
+        margin: 0 96px;
+    }
+    .reviews-title span::after {
+        width: 169px;
+    }
+
+    .review-subtitle {
+        width: 647px;
+        margin: 16px auto 64px auto;
+    }
+    
+    .reviews-list {
+        width: 1024px;
+        margin: 0 auto;
+    }
+    .review-card {
+        flex: 0 0 calc((100% - 64px) / 3);
+    }
+
+    .review-card:nth-child(3) {
+        display: block;
+    }
 }

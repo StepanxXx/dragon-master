@@ -1,5 +1,8 @@
-.proposal-container {
+.proposal {
     margin-bottom: 80px;
+}
+
+.proposal-container {
     border-radius: 16px;
     min-height: 737px;
     background-image: var(--linear-gradient-green);
@@ -35,11 +38,17 @@
     color: var(--light-green-accent);
 }
 
+.proposal-cards {
+    display: flex;
+    justify-content: center;
+    padding: 65px 0 64px;
+}
+
 .proposal-card-top {
     position: relative;
     display: flex;
     border-radius: 16px;
-    margin: 65px 20px 64px;
+
     width: calc(100% - 40px);
     min-height: 407px;
     background-color: transparent;
@@ -146,8 +155,14 @@
 
 @media screen and (min-width: 768px) {
 
-    .proposal-container {
+    .proposal {
         margin-bottom: 100px;
+        overflow-x: clip;
+    }
+
+    .proposal-container {
+        border-radius: 30px;
+        overflow: visible;
     }
 
     .proposal-title {
@@ -156,9 +171,14 @@
         padding: 64px 32px 0;
     }
 
+    .proposal-cards {
+        display: flex;
+        justify-content: center;
+        padding: 83px 0 92px;
+    }
+
     .proposal-card-top {
         border-radius: 30px;
-        margin: 83px 18px 92px;
         width: calc(100% - 36px);
         min-height: 500px;
     }
@@ -169,7 +189,7 @@
     }
 
     .proposal-card-top::after {
-        transform: translate(8.46px, 6.44px) rotate(11deg);  
+        transform: translate(8.46px, 6.44px) rotate(11deg); 
     }
 
     .proposal-card-top::before {
@@ -182,7 +202,7 @@
         flex-direction: column;
         align-items: flex-start;
         position: relative;
-        padding: 64px 32px;
+        padding: 65px 32px 63px;
         border-radius: 30px;
     }
 
@@ -230,28 +250,36 @@
 
 @media screen and (min-width: 1280px) {
 
-    .proposal-container {
+    .proposal {
         margin-bottom: 150px;
+    }
+
+    .proposal-container {
+        overflow: hidden;
     }
     
     .proposal-title {
-        max-width: 776px;
+        width: 904px;
         line-height: 1.16;
-        padding: 0;
-        margin: 64px 0 0 64px;
+        padding: 64px 64px 72px;
+    }
+
+    .proposal-cards {
+        display: flex;
+        justify-content: center;
+        padding: 61px 0 142px;
     }
 
     .proposal-card-top {
         border-radius: 30px;
-        margin: 133px 64px 142px;
         width: calc(100% - 128px);
         min-height: 471px;
     }
 
     .proposal-card-top::after {
         width: 1010px;
-        height: 401px;
-        transform: translate(1px, 35px) rotate(11deg);  
+        height: 402px;
+        transform: translate(1px, 32px) rotate(11deg);  
     }
 
     .proposal-card-top::before {
@@ -261,7 +289,7 @@
     }
 
     .top-card-content {
-        padding: 65px 64px;
+        padding: 65px 64px 63px;
     }
 
     .proposal-card-title {
@@ -269,7 +297,7 @@
     }
 
     .proposal-list {
-        gap: 18px;
+        gap: 16px;
         margin-bottom: 39px;
     }
 
