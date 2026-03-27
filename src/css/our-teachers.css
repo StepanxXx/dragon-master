@@ -1,3 +1,10 @@
+@media only screen and (min-width: 1280px) {
+  .our-teachers-container {
+    padding-left: 128px;
+    padding-right: 128px;
+  }
+}
+
 .our-teachers {
   margin-bottom: 80px;
 }
