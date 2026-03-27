@@ -1,38 +1,45 @@
 <section class="leave-an-app" id="leave-an-app">
-  <div class="container">
-    <div class="application__header">
-      <h2 class="application__title">
-        Leave an <span class="application__accent">application</span>
+  <div class="container leave-an-app-container">
+    <div class="leave-an-app-header">
+      <h2 class="leave-an-app-title">
+        Leave an <span class="leave-an-app-accent">application</span>
       </h2>
-      <p class="application__text">
-        Please use the form below to contact us. Enter your name, email, and message and we'll get back to you shortly.
+      <p class="leave-an-app-text">
+        Please use the form below to contact us. Enter your name, email, and
+        message and we'll get back to you shortly.
       </p>
     </div>
 
-    <div class="application__wrapper">
-      <div class="application__left">
-        <div class="application__image-mask">
-          <img
-            class="application__image"
-          src="/images/girl_learning@1x.png"
-srcset="/images/girl_learning@1x.png 1x, /images/girl_learning@2x.png 2x"
+    <div class="leave-an-app-wrapper">
+      <div class="leave-an-app-left">
+        <img
+          class="leave-an-app-image"
+          width="492"
+          height="392"
+          src="/images/girl_learning@1x.webp"
+          srcset="
+            /images/girl_learning@1x.webp 1x,
+            /images/girl_learning@2x.webp 2x
+          "
           alt="Girl learning online"
-          />
-        </div>
+          loading="lazy"
+        />
 
-        <div class="application__card">
-          <p class="application__number">1000</p>
-          <p class="application__card-text">
-            of our online English language lessons! This journey has been full of discovery, growth and unforgettable moments, and we are happy to share this joyful event with you.
+        <div class="leave-an-app-card">
+          <p class="leave-an-app-number">1000</p>
+          <p class="leave-an-app-card-text">
+            of our online English language lessons! This journey has been full
+            of discovery, growth and unforgettable moments, and we are happy to
+            share this joyful event with you.
           </p>
         </div>
       </div>
 
-      <div class="application__right">
-        <form class="application__form" name="leave_an_application" autocomplete="off">
+      <div class="leave-an-app-right">
+        <form class="leave-an-app-form" name="leave-an-app" autocomplete="off">
           <label for="name" class="visually-hidden">Name</label>
           <input
-            class="application__input"
+            class="leave-an-app-input"
             type="text"
             id="name"
             name="name"
@@ -44,7 +51,7 @@ srcset="/images/girl_learning@1x.png 1x, /images/girl_learning@2x.png 2x"
 
           <label for="email" class="visually-hidden">Email</label>
           <input
-            class="application__input"
+            class="leave-an-app-input"
             type="email"
             id="email"
             name="email"
@@ -56,7 +63,7 @@ srcset="/images/girl_learning@1x.png 1x, /images/girl_learning@2x.png 2x"
 
           <label for="phone" class="visually-hidden">Phone</label>
           <input
-            class="application__input"
+            class="leave-an-app-input"
             type="tel"
             id="phone"
             name="phone"
@@ -67,43 +74,38 @@ srcset="/images/girl_learning@1x.png 1x, /images/girl_learning@2x.png 2x"
           />
           <label for="comment" class="visually-hidden">Comment</label>
           <textarea
-            class="application__textarea"
+            class="leave-an-app-textarea"
             id="comment"
             name="comment"
             placeholder="Comment"
             required
           ></textarea>
 
-          <p class="application__radio-title">Choose a teacher</p>
+          <p class="leave-an-app-radio-title">Choose a teacher</p>
 
-          <div class="application__radio-group">
-            <label class="application__radio-label">
+          <div class="leave-an-app-radio-group">
+            <label class="leave-an-app-radio-label">
               <input type="radio" name="teacher" value="Maria" checked />
               Maria
             </label>
 
-            <label class="application__radio-label">
-              <input type="radio" name="teacher" value="Artem" />
-              Artem
-            </label>
-
-            <label class="application__radio-label">
+            <label class="leave-an-app-radio-label">
               <input type="radio" name="teacher" value="Ilona" />
               Ilona
             </label>
 
-            <label class="application__radio-label">
+            <label class="leave-an-app-radio-label">
               <input type="radio" name="teacher" value="Volodymyr" />
               Volodymyr
             </label>
           </div>
 
-          <button class="application__button" type="submit">Send</button>
+          <button class="leave-an-app-button" type="submit">Send</button>
         </form>
 
-        <p class="application__policy">
-          By clicking on “Send” button, you agree to our Privacy Policy,
-          and allow Promodo to use this information for marketing purposes.
+        <p class="leave-an-app-policy">
+          By clicking on “Send” button, you agree to our Privacy Policy, and
+          allow Promodo to use this information for marketing purposes.
         </p>
       </div>
     </div>
