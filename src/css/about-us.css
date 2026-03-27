@@ -90,7 +90,7 @@
 .about-us-item {
   width: 100%;
   max-width: 335px;
-  height: 160px;
+  min-height: 160px;
   padding: 32px;
   border-radius: 30px;
   background-color: #f3f5f6;
