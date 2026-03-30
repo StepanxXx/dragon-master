@@ -14,58 +14,6 @@
     }
 }
 
-.hero-container {
-    --hero-bg-mobile-svg-gradient: url("data:image/svg+xml,%3Csvg width='335' height='709' viewBox='0 0 335 709' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='335' height='709' rx='16' fill='url(%23paint0_linear_51_302)' fill-opacity='0.4'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_51_302' x1='32' y1='447.5' x2='12.6939' y2='248.842' gradientUnits='userSpaceOnUse'%3E%3Cstop/%3E%3Cstop offset='1' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
-    position: relative;
-    border-radius: 16px;
-    min-height: 709px;
-    background-color: #A2A7A3;
-    background-image: var(--hero-bg-mobile-svg-gradient), url(../images/hero-bg.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 425px 20px 66px;
-}
-
-@media (resolution: 2x) {
-    .hero-container {
-        background-image: var(--hero-bg-mobile-svg-gradient), url(../images/hero-bg@2x.webp);
-    }
-}
-
-@media (min-width: 768px) {
-    .hero-container {
-        --hero-bg-tablet-svg-gradient: url("data:image/svg+xml,%3Csvg width='704' height='857' viewBox='0 0 704 857' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='704' height='857' rx='30' fill='url(%23paint0_linear_49_389)' fill-opacity='0.4'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_49_389' x1='268.293' y1='168.266' x2='384.639' y2='178.266' gradientUnits='userSpaceOnUse'%3E%3Cstop/%3E%3Cstop offset='1' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
-        min-height: 857px;
-        border-radius: 30px;
-        background-image: var(--hero-bg-tablet-svg-gradient), url(../images/hero-bg-tablet.webp);
-        padding: 260px 184px 112px 32px;
-    }
-
-    @media (resolution: 2x) {
-        .hero-container {
-            background-image: var(--hero-bg-tablet-svg-gradient), url(../images/hero-bg-tablet@2x.webp);
-        }
-    }
-}
-
-@media (min-width: 1280px) {
-    .hero-container {
-        --hero-bg-desktop-svg-gradient: url("data:image/svg+xml,%3Csvg width='1152' height='629' viewBox='0 0 1152 629' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1152' height='629' rx='30' fill='url(%23paint0_linear_79_1976)' fill-opacity='0.4'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_79_1976' x1='439.024' y1='123.5' x2='624.024' y2='158.948' gradientUnits='userSpaceOnUse'%3E%3Cstop/%3E%3Cstop offset='1' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
-        min-height: 629px;
-        background-image: var(--hero-bg-desktop-svg-gradient), url(../images/hero-bg-desktop.webp);
-        padding: 164px 524px 112px 64px;
-    }
-
-    @media (resolution: 2x) {
-        .hero-container {
-            background-image:
-                var(--hero-bg-desktop-svg-gradient),
-                url(../images/hero-bg-desktop@2x.webp);
-        }
-    }
-}
-
 .hero-title {
     font-weight: 700;
     font-size: 38px;
