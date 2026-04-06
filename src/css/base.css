@@ -24,6 +24,7 @@ body {
   font-family: var(--font-family);
   color: var(--black);
   background-color: var(--white);
+  scroll-behavior: smooth;
 }
 
 body:has(.mobile-menu.is-open) {
